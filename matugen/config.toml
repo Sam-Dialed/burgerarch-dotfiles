@@ -28,17 +28,24 @@ output_path = "/home/burgerarch/.config/rofi/colors/colors.rasi"
 [templates.waybar]
 input_path = "/home/burgerarch/.config/matugen/templates/colors.css"
 output_path = "/home/burgerarch/.config/waybar/colors.css"
-post_hook = "pkill waybar; waybar & disown"
+post_hook = "pkill waybar; waybar > /dev/null 2>&1 & disown"
 
 
 
-#[templates.zathura]
-#input_path = "/home/burgerarch/.config/matugen/templates/zathura.conf"
-#output_path = "/home/burgerarch/.config/zathura/zathurarc"
+[templates.gtk]
+input_path = "/home/burgerarch/.config/matugen/templates/gtk.css"
+output_path = "/home/burgerarch/.config/gtk-3.0/gtk.css"
 
 
-#[templates.swaync]
-#input_path = "/home/burgerarch/.config/matugen/templates/swaync.css"
-#output_path = "/home/burgerarch/.config/swaync/colors.css"
-#post_hook = "swaync-client -R"
+
+[templates.firefox-chrome]
+input_path = "/home/burgerarch/.config/matugen/templates/userChrome.css"
+output_path = "/home/burgerarch/.mozilla/firefox/ahn9eqsy.default-release/chrome/userChrome.css"
+
+
+
+[templates.firefox-content]
+input_path = "/home/burgerarch/.config/matugen/templates/userContent.css"
+output_path = "/home/burgerarch/.mozilla/firefox/ahn9eqsy.default-release/chrome/userContent.css"
+
 

@@ -1,0 +1,97 @@
+/* ── Matugen Firefox Rice ── */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+:root {
+  --bg:         #16130b;
+  --surface:    #231f17;
+  --surface-hi: #2d2a21;
+  --primary:    #e2c46d;
+  --on-surface: #eae2d4;
+  --muted:      #4c4639;
+  --outline:    #989080;
+
+  --font: "JetBrainsMono Nerd Font";
+}
+
+/* ── Toolbar ── */
+#navigator-toolbox {
+  background-color: var(--bg) !important;
+  border-bottom: 1px solid var(--muted) !important;
+  font-family: var(--font) !important;
+}
+
+/* ── Urlbar ── */
+#urlbar,
+#urlbar-background {
+  background-color: var(--surface) !important;
+  border: 1px solid var(--muted) !important;
+  border-radius: 8px !important;
+  color: var(--on-surface) !important;
+}
+
+#urlbar:focus-within #urlbar-background {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--primary) 25%, transparent) !important;
+}
+
+/* ── Tabs ── */
+#tabbrowser-tabs {
+  background-color: var(--bg) !important;
+}
+
+.tabbrowser-tab .tab-background {
+  background-color: transparent !important;
+  border-radius: 6px !important;
+}
+
+.tabbrowser-tab[selected] .tab-background {
+  background-color: #2d2a21 !important;
+  border: 2px solid #989080 !important;
+  border-radius: 6px !important;
+}
+
+.tabbrowser-tab:hover .tab-background {
+  background-color: var(--surface) !important;
+}
+
+.tab-label {
+  color: var(--on-surface) !important;
+  font-family: var(--font) !important;
+  font-size: 11pt !important;
+}
+
+.tabbrowser-tab[selected] .tab-background {
+  background-color: var(--surface-hi) !important;
+  box-shadow: inset 0 -2px 0 var(--primary) !important;
+  border-radius: 6px !important;
+}
+/* ── Tab close button ── */
+.tab-close-button {
+  color: var(--outline) !important;
+}
+
+.tab-close-button:hover {
+  color: var(--primary) !important;
+  background-color: color-mix(in srgb, var(--primary) 15%, transparent) !important;
+}
+
+/* ── Sidebar ── */
+#sidebar-box {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+}
+
+/* ── Context menus ── */
+menupopup,
+panel {
+  background-color: var(--surface-hi) !important;
+  color: var(--on-surface) !important;
+  border: 1px solid var(--muted) !important;
+  border-radius: 8px !important;
+}
+
+menuitem:hover {
+  background-color: color-mix(in srgb, var(--primary) 20%, transparent) !important;
+  color: var(--primary) !important;
+  border-radius: 5px !important;
+}

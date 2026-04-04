@@ -1,0 +1,25 @@
+/* ── New Tab Page ── */
+@-moz-document url("about:home"), url("about:newtab") {
+  body {
+    background-color: #3d392f !important;
+  }
+
+  .outer-wrapper {
+     background-color: #3d392f !important;
+   }
+
+  .search-wrapper input {
+    background-color: #2d2a21 !important;
+    color: #eae2d4 !important;
+    border: 1px solid #4c4639 !important;
+    border-radius: 8px !important;
+  }
+
+  .top-site-outer .tile {
+    background-color: #2d2a21 !important;
+  }
+
+  .top-site-label {
+    color: #eae2d4 !important;
+  }
+}
