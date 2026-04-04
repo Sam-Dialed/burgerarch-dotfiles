@@ -1,0 +1,77 @@
+#----------------------------
+#----------------------------
+# Import
+#----------------------------
+[general]
+import = ["~/.config/alacritty/colors.toml"]
+#----------------------------
+
+
+
+
+#-----------------------------
+# Window
+# -----------------------------
+[window]
+opacity = 0.80
+padding = { x = 30, y = 30 }
+dynamic_padding = false
+startup_mode = "Windowed"
+
+[window.dimensions]
+columns = 80
+lines = 24
+
+# =============================
+# Font (LOCKED to Mono)
+# =============================
+[font]
+size = 12.0
+
+[font.normal]
+family = "CaskaydiaCove Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "CaskaydiaCove Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "CaskaydiaCove Nerd Font Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "CaskaydiaCove Nerd Font Mono"
+style = "Bold Italic"
+
+# -----------------------------
+# Cursor
+# -----------------------------
+[cursor.style]
+shape = "Block"
+
+[cursor]
+blink_interval = 500  # ms (kitty's 1 ≈ blink on)
+
+# -----------------------------
+# Shell
+# -----------------------------
+[terminal.shell]
+program = "/usr/bin/zsh"
+
+# -----------------------------
+# Scrolling
+# -----------------------------
+[scrolling]
+history = 10000
+multiplier = 3
+
+# -----------------------------
+# Bell (disable audio bell)
+# -----------------------------
+
+# -----------------------------
+# Performance / Sync
+# -----------------------------
+[debug]
+render_timer = false

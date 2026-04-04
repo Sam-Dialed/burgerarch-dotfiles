@@ -1,0 +1,44 @@
+[config.wallpaper]
+# Whether to set the wallpaper or not
+set = false
+
+# The base command to run for applying the wallpaper.
+# Keywords like {{ image }} or anything that works inside of hooks works here.
+# You could also set a static color if you use the color keywords and the wallpaper setter supports it.
+command = "swww"
+
+arguments = ["img", "--transition-type", "center"]
+
+[templates.hyprland]
+input_path = "/home/burgerarch/.config/matugen/templates/hyprland-colors.conf"
+output_path = "/home/burgerarch/.config/hypr/colors.conf"
+post_hook = "hyprctl reload"
+
+[templates.alacritty]
+input_path = "/home/burgerarch/.config/matugen/templates/alacritty.toml"
+output_path = "/home/burgerarch/.config/alacritty/colors.toml"
+
+
+
+[templates.rofi]
+input_path = "/home/burgerarch/.config/matugen/templates/rofi-colors.rasi"
+output_path = "/home/burgerarch/.config/rofi/colors/colors.rasi"
+
+
+[templates.waybar]
+input_path = "/home/burgerarch/.config/matugen/templates/colors.css"
+output_path = "/home/burgerarch/.config/waybar/colors.css"
+post_hook = "pkill waybar; waybar & disown"
+
+
+
+#[templates.zathura]
+#input_path = "/home/burgerarch/.config/matugen/templates/zathura.conf"
+#output_path = "/home/burgerarch/.config/zathura/zathurarc"
+
+
+#[templates.swaync]
+#input_path = "/home/burgerarch/.config/matugen/templates/swaync.css"
+#output_path = "/home/burgerarch/.config/swaync/colors.css"
+#post_hook = "swaync-client -R"
+

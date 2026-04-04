@@ -1,0 +1,226 @@
+@import "colors.css";
+    
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window#waybar {
+    background: @background;
+    color: @on_surface;
+    border-radius: 0px;
+}
+
+tooltip {
+  background: @background;
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color:@on_surface;
+}
+
+#workspaces{
+    transition: all 250ms ease-in-out;
+}
+
+#workspaces button {
+    
+    transition: all 250ms ease-in-out;
+    padding: 0 8px;
+    margin: 6px;
+
+    border-radius: 5px;
+    background: transparent;
+    color: @on_surface;
+    
+    
+}
+
+#workspaces button:hover {
+    background-color: @surface_container_high;
+    min-width: 35px;
+    min-height: 6px;
+}
+
+
+#workspaces button.active {
+    transition: all 250ms ease-in-out;
+    min-width: 35px;
+    min-height: 6px;
+    background: @primary;
+    color: rgb(27, 26, 26);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+    border-style:solid;
+    border-color: @inverse_primary;
+    border-width: 2px;
+}
+
+
+/* ----------- left side uwu ;) -------------*/
+
+
+
+#clock{
+
+        padding: 5px 20px;
+        transition: all 250ms ease-in-out;
+        background-color: @primary;
+        color: rgb(27, 26, 26);
+        border-radius: 4px;
+        margin: 8px;
+        border-style:solid;
+        border-color: @inverse_primary;
+        border-width: 2px;
+        font-weight: bold;
+
+}
+
+#custom-exit{
+
+        padding-top: 6px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 24px;
+        transition: all 250ms ease-in-out;
+        background-color: @primary;
+        color: rgb(27, 26, 26);
+        border-radius: 4px;
+        margin: 8px;
+        border-style:solid;
+        border-color: @inverse_primary;
+        border-width: 2px;
+        font-weight: bold;
+}
+
+
+
+
+
+#network{
+
+    transition: all 250ms ease-in-out;
+    background-color: @on_primary_fixed;
+    color: @primary_fixed;
+    margin: 8px;
+    padding: 8px 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: @primary_fixed;
+    border-radius: 40px;
+}
+
+#bluetooth{
+
+    transition: all 250ms ease-in-out;
+    background-color: @on_primary_fixed;
+    color: @primary_fixed;
+    margin: 8px 8px 8px 4px;
+    padding: 7px 14px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: @primary_fixed;
+    border-radius: 40px;
+}
+
+
+
+
+
+
+#battery,
+#pulseaudio,
+#backlight
+    {
+        transition: all 250ms ease-in-out;
+        padding: 5px 12px;
+        background-color: @primary;
+        color: rgb(27, 26, 26);
+        border-radius: 4px;
+        margin: 8px;
+        border-style:solid;
+        border-color: @inverse_primary;
+        border-width: 2px;
+        font-weight: bold;
+        
+    
+}
+
+
+
+#custom-notifications{
+        padding-left: 13px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition: all 250ms ease-in-out;
+        background-color: @primary;
+        color: rgb(27, 26, 26);
+        border-radius: 400px;
+        margin: 8px;
+        border-style:solid;
+        border-color: @inverse_primary;
+        border-width: 2px;
+        font-weight: bold;
+}
+
+
+#custom-asus-mode {
+    transition: all 250ms ease-in-out;
+    padding-left: 13px;
+    padding-right: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: @primary;
+    color: rgb(27, 26, 26);
+    border-radius: 40px;
+    margin: 8px;
+    font-weight: bold;
+    border-color: @inverse_primary;
+    border-style: solid;
+    border-width: 2px;
+}
+
+
+
+#network:hover,
+#bluetooth:hover,
+#custom-exit:hover,
+#custom-notifications:hover,
+#custom-asus-mode:hover
+
+{
+    transition: all 250ms ease-in-out;
+    color: @on_surface;
+    background-color: @surface_container_high;
+    min-width: 40px;
+    min-height: 10px;
+}
+
+#battery:hover,
+#clock:hover,
+#pulseaudio:hover,
+#backlight:hover
+{
+
+    transition: all 250ms ease-in-out;
+    color: @on_surface;
+    background-color: @surface_container_high;
+    min-height: 10px;
+    min-width: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
