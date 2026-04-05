@@ -1,14 +1,14 @@
 # Dotfiles
-burgerarch 🍸
+burgerarch@archlinux 🍸
 
 ## Эй, братан!
-Rice for *Hyprland* on Arch Linux.
-Running on Asus Zephyrus G14
+Rice for **Hyprland** on Arch Linux.
+Running on **Asus Zephyrus G14**
 
 ## Features
-- Dynamic *Waybar*
-- Custom transition *Wallpaper Script*
-- Minimal rice
+- Dynamic **Waybar**
+- Custom Transition **Wallpaper Script**
+- Minimal Rice
 
 ## Demo
 ![demo](assets/demoarch.gif)
@@ -20,13 +20,13 @@ Running on Asus Zephyrus G14
 ![neofetch](assets/neofetch.png)
 
 ## Contents
-- `alacritty` → terminal config
-- `firefox` → browser theme
-- `hypr` → window manager
-- `neofetch` → info
-- `rofi` → launcher + powermenu
-- `waybar` → status bar
-- `zsh` → shell configs
+- [`alacritty`](./dotfiles/alacritty) → terminal config
+- [`firefox`](./dotfiles/firefox) → browser theme
+- [`hypr`](./dotfiles/hypr) → window manager
+- [`neofetch`](./dotfiles/neofetch) → info
+- [`rofi`](./dotfiles/rofi) → launcher + powermenu
+- [`waybar`](./dotfiles/waybar) → status bar
+- [`zsh`](./dotfiles/zsh) → shell configs
 
 ## Huge Inspo
-Felix my man. Thank you so much for pushing me into this rabbit hole [pewds](https://github.com/pewdiepie-archdaemon) 👊
+Felix my man. Thank you so much for pushing me down this rabbit hole [pewds](https://github.com/pewdiepie-archdaemon) 👊.
